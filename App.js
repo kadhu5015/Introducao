@@ -3,8 +3,11 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 import Atividade1 from "./src/Atividade1/Aluno";
-import Atividade2 from './src/Atividade2/Atividade2';
-import Exemploproff from './src/Atividade2/FeitapeloProff';
+import Cabecalho from './src/Atividade2/Cabecalho';
+import Imagem2 from './src/Atividade2/Corpo';
+import Disciplina from './src/Atividade2/Disciplina';
+import Atividade2 from './src/CidadesExemplo/Atividade2';
+import Exemploproff from './src/CidadesExemplo/FeitapeloProff';
 import Estilo01 from './src/Estilos/Estilo01';
 import Hello from "./src/Hello/Hello"
 import Imagem from "./src/Imagem/Imagem";
@@ -15,7 +18,11 @@ import SomaSubtrai from './src/state/SomaSubtrai';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Atividade1/>
+      <Imagem2/>
+      <Cabecalho nome={"Irmao do Jorel"}curso={"Design Digital"}></Cabecalho>
+      <Disciplina disciplina={"Mobile"}/>
+
+
     </View>
   );
 }
