@@ -14,15 +14,17 @@ import Imagem from "./src/Imagem/Imagem";
 import Estudante from './src/props/Estudante';
 import EstudanteComFuncao from './src/props/EstudanteComFuncao';
 import SomaSubtrai from './src/state/SomaSubtrai';
+import CalculadoraApp from './src/Imc/CalculadoraApp';
+import TradutorPizza from './src/pizza/Tradutor';
+import BotaoInput from './src/BotaoInput/BotaoInput';
+import Tocavel from './src/tocaveis/tocaveis';
+import MeuScroll from './src/scroll/MeuScroll';
+import IMCApp from './src/Atividade3/IMCApp';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Imagem2/>
-      <Cabecalho nome={"Irmao do Jorel"}curso={"Design Digital"}></Cabecalho>
-      <Disciplina disciplina={"Mobile"}/>
-
-
+      <IMCApp></IMCApp>
     </View>
   );
 }
