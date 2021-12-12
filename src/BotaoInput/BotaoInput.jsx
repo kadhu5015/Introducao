@@ -13,7 +13,7 @@ export default class BotaoInput extends Component{
         const textoescrito = ''        
         return(
             <View style={{padding:10}}>
-                <h1>{this.textoescrito}</h1>
+                <h1>{textoescrito}</h1>
                 <Text>
                     Entrada de texto com botão
                 </Text>

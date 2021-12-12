@@ -26,11 +26,9 @@ export default class Exemploproff extends Component{
 
             for (var cidade in cidades){ //cidade vai assumir de um por um os valores do this.state
                 if(cidades[cidade]<=menor)
-                    menor = cidades[cidade]
-                    console.log(cidades[cidade])
+                    menor = cidades[cidade]     
             }
-            
-
+        
             //montando a string
 
             for(var cidade in cidades){

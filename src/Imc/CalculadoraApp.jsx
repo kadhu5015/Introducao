@@ -11,6 +11,7 @@ export default class CalculadoraApp extends Component{
     }
 
     render(){
+        
         return(
             <View>
                 <h1>Peso: {this.state.peso}</h1>

@@ -20,12 +20,14 @@ import BotaoInput from './src/BotaoInput/BotaoInput';
 import Tocavel from './src/tocaveis/tocaveis';
 import MeuScroll from './src/scroll/MeuScroll';
 import IMCApp from './src/Atividade3/IMCApp';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import StackRaizTela from './src/Routes';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <IMCApp></IMCApp>
-    </View>
+    <SafeAreaProvider>
+    <StackRaizTela></StackRaizTela>
+   </SafeAreaProvider>
   );
 }
 
