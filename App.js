@@ -1,6 +1,8 @@
 
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import {SafeAreaProvider} from 'react-native-safe-area-context'
+
 
 import Atividade1 from "./src/Atividade1/Aluno";
 import Cabecalho from './src/Atividade2/Cabecalho';
@@ -20,15 +22,23 @@ import BotaoInput from './src/BotaoInput/BotaoInput';
 import Tocavel from './src/tocaveis/tocaveis';
 import MeuScroll from './src/scroll/MeuScroll';
 import IMCApp from './src/Atividade3/IMCApp';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
-import StackRaizTela from './src/Routes';
+import MeuFlatList from './src/tocaveis/MeuFlaList';
+import MySectionList from './src/tocaveis/MySectionList';
+import MyNetworking from './src/tocaveis/MyNetworking';
+import Home from './src/Stack/Home';
+import Routes from './src/Stack/Rotas';
+import Modal from './src/Stack/Modal'
+import Rotas from './src/Atividade5/Routes'
+
 
 export default function App() {
   return (
     <SafeAreaProvider>
-    <StackRaizTela></StackRaizTela>
-   </SafeAreaProvider>
-  );
+      <Rotas/>
+    </SafeAreaProvider>
+   
+    
+    );
 }
 
 const styles = StyleSheet.create({
